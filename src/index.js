@@ -7,9 +7,7 @@ import rootReducer from "./modules";
 import { Provider } from "react-redux";
 
 const store = configureStore({
-  reducer: {
-    user: rootReducer,
-  },
+  reducer: rootReducer,
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
